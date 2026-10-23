@@ -1,0 +1,15 @@
+{
+  "_comment": "Every asset in the game, by briq id. `npm run assets` re-fetches them from their permanent keyless URLs and rewrites CREDITS.md. Swap the character for any rig_standard=briq-v1 asset and nothing else changes.",
+  "api": "https://briq.market/api/v1",
+  "character": {
+    "id": "4a8dab8a-30cc-49a3-b4a5-8dd62c31f185",
+    "variant": "animated",
+    "file": "orc.glb"
+  },
+  "props": [
+    { "id": "edd725a6-f5f6-422f-a433-ffd3f1da6d93", "variant": "base", "file": "oracle-core.glb" },
+    { "id": "01e17f4c-cb2a-4b05-abf5-ef62a1dffba6", "variant": "base", "file": "pioneer-s26.glb" },
+    { "id": "70d1c7dd-d872-49db-88b6-30c93cac8f54", "variant": "base", "file": "gemini-drive.glb" },
+    { "id": "088461a1-88d5-4be5-adf4-74fab9c07ee3", "variant": "base", "file": "comet-wing.glb" }
+  ]
+}

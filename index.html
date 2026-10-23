@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Outpost Run — a briq voxel game starter</title>
+    <style>
+      html, body { margin: 0; height: 100%; background: #0b1020; overflow: hidden; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; color: #e8ecf5; }
+      canvas { display: block; }
+      #hud { position: fixed; inset: 16px 16px auto 16px; display: flex; justify-content: space-between; pointer-events: none; font-size: 14px; }
+      #hud .score { font-size: 28px; font-weight: 700; }
+      #hud .hint { opacity: 0.7; text-align: right; line-height: 1.5; }
+      #toast { position: fixed; left: 50%; bottom: 10vh; transform: translateX(-50%); padding: 10px 16px; background: rgba(239, 67, 0, 0.92); font-weight: 700; opacity: 0; transition: opacity 0.3s; pointer-events: none; }
+      #toast.show { opacity: 1; }
+      #credits { position: fixed; right: 16px; bottom: 12px; font-size: 11px; opacity: 0.55; }
+      #credits a { color: inherit; }
+    </style>
+  </head>
+  <body>
+    <div id="hud">
+      <div><div class="score">⚡ <span id="score">0</span> / <span id="total">0</span></div><div>energy cells</div></div>
+      <div class="hint">WASD / arrows to move · Shift to run · Space to jump<br />Assets from <strong>briq.market</strong> — swap the character in public/assets.json</div>
+    </div>
+    <div id="toast"></div>
+    <div id="credits">voxel assets by briq creators — see <a href="https://github.com/briqNFT/voxel-game-starter/blob/main/CREDITS.md">CREDITS.md</a></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

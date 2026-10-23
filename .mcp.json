@@ -1,0 +1,5 @@
+{
+  "mcpServers": {
+    "briq": { "type": "http", "url": "https://briq.market/mcp" }
+  }
+}
